@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Attila Bécsi · Studies</title>
+<meta name="description" content="Open-data studies on industrial and AI infrastructure: what is being built, what is running, and the risks around it.">
+<meta property="og:title" content="Attila Bécsi · Studies">
+<meta property="og:description" content="Open-data studies on industrial and AI infrastructure: what is being built, what is running, and the risks around it.">
+<meta property="og:image" content="https://abecsi.github.io/img/watts-per-worker.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;750;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fff;--panel:#f3f6fa;--navy:#0a0e27;--ink:#0f172a;--ink2:#334155;--mute:#64748b;--rule:#dbe2ea;--blue:#2563eb;
+  --sans:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0b1020;--panel:#141b2f;--navy:#e8edf7;--ink:#e5e9f2;--ink2:#b6c0d3;--mute:#8a96ad;--rule:#26304a;--blue:#7aa7ff}}
+:root[data-theme="dark"]{--paper:#0b1020;--panel:#141b2f;--navy:#e8edf7;--ink:#e5e9f2;--ink2:#b6c0d3;--mute:#8a96ad;--rule:#26304a;--blue:#7aa7ff}
+*{box-sizing:border-box}
+html,body{overflow-x:hidden}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{border-bottom:3px solid var(--navy);padding:16px 0 12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--navy)}
+header a{color:var(--blue);text-decoration:none}
+.hero{padding:56px 0 30px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+h1{font-size:clamp(36px,6vw,60px);line-height:1.04;letter-spacing:-.025em;font-weight:800;color:var(--navy);margin:12px 0 16px;text-wrap:balance}
+.lede{font-size:19px;color:var(--ink2);max-width:720px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:22px;padding:20px 0 50px}
+.card{display:flex;flex-direction:column;border-top:2px solid var(--navy);background:var(--panel);text-decoration:none;color:inherit;transition:transform .15s}
+.card:hover{transform:translateY(-3px)}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;display:block;background:#fff}
+.card .b{padding:18px 20px 22px}
+.card .n{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+.card h2{font-size:24px;line-height:1.2;color:var(--navy);margin:6px 0 8px;letter-spacing:-.01em}
+.card p{margin:0 0 12px;color:var(--ink2);font-size:15.5px}
+.card .k{font-size:14px;color:var(--ink);border-left:3px solid var(--blue);padding-left:10px;margin-top:auto}
+.links{font-family:var(--mono);font-size:13px;margin-top:14px;display:flex;gap:16px;flex-wrap:wrap}
+.links a{color:var(--blue)}
+.about{border-top:1px solid var(--rule);padding:30px 0 60px;display:grid;grid-template-columns:200px 1fr;gap:24px}
+.about h3{margin:0;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--navy);font-weight:500}
+.about p{margin:0 0 10px;color:var(--ink2);max-width:680px}
+.about a{color:var(--blue)}
+@media (max-width:640px){.about{grid-template-columns:1fr}.hero{padding-top:36px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><span>Attila Bécsi</span><a href="https://github.com/abecsi">GitHub ↗</a></header>
+
+<section class="hero">
+  <div class="eyebrow">Open-data studies</div>
+  <h1>What is being built, what is running, and the risks around it</h1>
+  <p class="lede">I study industrial and AI infrastructure from the outside: satellite imagery, night lights, ship tracking, permits and public filings. Every number in these studies traces to a public source listed in its appendix.</p>
+</section>
+
+<section class="grid">
+  <a class="card" href="concrete-and-compute/">
+    <img src="img/concrete-and-compute.png" alt="Water stress at US AI data-center sites">
+    <div class="b">
+      <div class="n">Study · September 2026</div>
+      <h2>Concrete and Compute</h2>
+      <p>Five flagship US AI campuses, tracked through permits, construction data, satellite imagery and NASA night lights.</p>
+      <div class="k">About a third of the planned power at the five campuses is energized today. 14 of 36 located US AI sites sit in high-stress water basins.</div>
+    </div>
+  </a>
+  <a class="card" href="watts-per-worker/">
+    <img src="img/watts-per-worker.png" alt="Scenario chart: electricity for AI agents for one billion knowledge workers">
+    <div class="b">
+      <div class="n">Study · October 2026</div>
+      <h2>Watts per Worker</h2>
+      <p>An interactive model of the electricity, machines and equipment it would take to give every knowledge worker an AI co-worker.</p>
+      <div class="k">An assistant for a billion workers needs about 2 TWh a year. Agents doing the work, at measured energy per task, need about 1,700 TWh, more than any published data-center scenario.</div>
+    </div>
+  </a>
+</section>
+
+<section class="about">
+  <h3>About</h3>
+  <div>
+    <p>I'm Attila Bécsi. I work on measuring physical economic activity with open data, and on being honest about what that data can and cannot show. Each study states its limits next to its findings.</p>
+    <p>Questions, corrections or data I should look at: <a href="https://github.com/abecsi">find me on GitHub</a>.</p>
+  </div>
+</section>
+</div>
+</body>
+</html>
